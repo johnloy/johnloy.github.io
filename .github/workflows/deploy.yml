@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "resume.json"
+      - "scripts/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
@@ -33,13 +34,10 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: |
-          npm install resumed jsonresume-theme-even
+        run: npm ci
 
-      - name: Build resume HTML
-        run: |
-          mkdir -p public
-          npx resumed render resume.json --theme jsonresume-theme-even --output public/index.html
+      - name: Build resume HTML and PDF
+        run: node scripts/build.mjs
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
