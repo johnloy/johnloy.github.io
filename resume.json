@@ -1,0 +1,375 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "John Loy",
+    "label": "Web Engineer",
+    "image": "https://avatars.githubusercontent.com/u/118049?v=4",
+    "email": "loy.john@gmail.com",
+    "url": "",
+    "summary": "I\u2019ve done most things \u201cweb\u201d, for over 20 years, beginning my career as a designer, evolving into a web engineer. At various points in my career, I\u2019ve called myself a webmaster, web UX designer, back-end engineer, and front-end engineer. These days, I might call myself a front-end-leaning full-stack engineer, but I prefer to just call myself flexible. Also, I\u2019m a developer who gets design!",
+    "location": {
+      "city": "Charlottesville",
+      "region": "VA",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "johnloy",
+        "url": "https://github.com/johnloy"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "johnmloy",
+        "url": "https://www.linkedin.com/in/johnmloy/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Dreamworks Animation, NBC Universal",
+      "position": "Senior Software Engineer",
+      "url": "https://dreamworks.com",
+      "startDate": "2022-03-01",
+      "summary": "Develop custom web applications to support the data management needs of animators and other specialists involved in film production at the Dreamworks Animation studio.",
+      "highlights": [
+        "Developed and maintained a web-based file transfer tool to facilitate safely exchanging film assets between Dreamworks and vendors ",
+        "Developed and maintained a web-based tool for inspecting the readiness of 3D model assets, including a WebGL-based 3D model viewer",
+        "Developed and maintained a web-based digital \"backlot\" tool for retrieving and reusing digital assets used in past Dreamworks films ",
+        "Assisted with development and management of a visual design system of UI components for use in Dreamworks web-based applications "
+      ]
+    },
+    {
+      "name": "WillowTree",
+      "position": "Staff Engineer",
+      "url": "https://willowtreeapps.com",
+      "startDate": "2018-11-01",
+      "summary": "Architected, developed, and advised in a senior client-facing capacity to produce web apps for multi-platform client projects",
+      "highlights": [
+        "Developed features for an internal supply chain management app for Anheuser-Busch InBev using React, TypeScript, Docker, Node (API), SQL Server, and Azure ",
+        "Migrated a Chrome/Firefox web extension to Safari for Capital One using Angular, TypeScript, and XCode",
+        "Led an initiative to migrate the WillowTree website from a React SSR SPA to a static JAMStack site using a custom SSG build tool built on standard Web Components and Netlify",
+        "Mentored colleagues at WillowTree, particularly about the emergence of Web Components",
+        "Used a variety of front-end frameworks and technologies, including React, Angular, Web Components, and TypeScript"
+      ],
+      "endDate": "2021-12-01"
+    },
+    {
+      "name": "WillowTree",
+      "position": "Senior Engineer",
+      "url": "https://willowtreeapps.com/",
+      "startDate": "2015-11-01",
+      "summary": "Architected, developed, and advised in a senior client-facing capacity to produce web apps for multi-platform client projects",
+      "highlights": [
+        "Led development of a full rewrite of the HBO Nordic OTT streaming web app, a React+Redux+TypeScript SPA, from inception to release and maintenance",
+        "Developed features for the HBO Nordic and Fox Chromecast apps",
+        "Provided on-site support for the HBO Nordic client",
+        "Mentored colleagues, new hires, and interns at WillowTree"
+      ],
+      "endDate": "2018-11-01"
+    },
+    {
+      "name": "Roomkey",
+      "position": "Front-End Developer",
+      "url": "https://roomkey.com/",
+      "startDate": "2013-07-01",
+      "summary": "Developed the UI of a hotel booking meta search website",
+      "highlights": [
+        "Developed the UI of the centerpiece autocomplete search, live search filtering, search results, and geo results visualization",
+        "Worked with Backbone.js on the front-end",
+        "Worked with Clojure on the back-end"
+      ],
+      "endDate": "2015-10-01"
+    },
+    {
+      "name": "Scitent",
+      "position": "Ruby on Rails Developer",
+      "url": "https://www.scitent.com/",
+      "startDate": "2011-03-01",
+      "summary": "Developed e-learning solutions for the health care industry",
+      "highlights": [
+        "Executed a rewrite in Rails of the flagship Scitent web-based learning management system, tailored to clients like the American Heart Association",
+        "Worked with Backbone.js and Knockout.js on the front-end",
+        "Worked with Ruby on Rails and MySQL on the back-end"
+      ],
+      "endDate": "2013-06-01"
+    },
+    {
+      "name": "Intalgent",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2009-08-01",
+      "summary": "Developed the UI of bespoke web app solutions, in a small agency setting",
+      "highlights": [
+        "Served clients from e-commerce, higher education, non-profit, and medical industries",
+        "Developed the Youth Leadership Initiative for the U.Va. Center for Politics, a mock election web app serving tens of thousands of educators and students worldwide",
+        "Worked with jQuery, and otherwise \u201cvanilla\u201d JavaScript, on the front-end",
+        "Worked with PHP, Rails, Grails, and ColdFusion on the back-end"
+      ],
+      "endDate": "2011-03-01"
+    },
+    {
+      "name": "University of Virginia Library",
+      "position": "Web UX Designer",
+      "url": "",
+      "startDate": "2006-07-01",
+      "summary": "Stewarded the web presence of the U.Va. Library as part of the library communications team",
+      "highlights": [
+        "Guided the library through a redesign effort, involving information architecture, visual design, SEO, technical solutions, and stakeholder training",
+        "Developed a UI framework, templating, and CMS solution to accommodate the needs of thousands of pages and dozens of website stakeholders",
+        "Contributed to the UI development of the library catalog search",
+        "Conducted user research to inform ongoing site development"
+      ],
+      "endDate": "2009-07-01"
+    },
+    {
+      "name": "University of Virginia, College and Graduate School of Arts & Sciences",
+      "position": "Webmaster",
+      "url": "",
+      "startDate": "2000-07-01",
+      "summary": "Stewarded the web presence of the U.Va. College and Graduate School of Arts & Sciences as part of the A&S communications team",
+      "highlights": [
+        "Guided the College and Graduate School through a redesign effort, involving information architecture, visual design, SEO, technical solutions, and stakeholder training",
+        "Designed, built, and maintained the first two incarnations of A&S Online, the primary web news publication of the College and Graduate School of Arts & Sciences",
+        "Developed a custom CMS solution for A&S Online using PHP, MySQL, and Apache"
+      ],
+      "endDate": "2006-07-01"
+    },
+    {
+      "name": "Gibson Design Associates",
+      "position": "Graphic Designer",
+      "url": "",
+      "startDate": "1998-07-01",
+      "summary": "",
+      "highlights": [
+        "Designed and assisted with production of print publications such as brochures, pamphlets, corporate identity packages, event invitations, and advertising displays",
+        "Designed layout and coded websites for corporate and non-profit clients, including Monticello and the University of Virginia",
+        "Produced illustrations as graphic elements for design projects"
+      ],
+      "endDate": "1999-10-01"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Habitat for Humanity",
+      "position": "Volunteer",
+      "url": "https://www.habitat.org/volunteer/build-events/carter-work-project",
+      "startDate": "2005-05-01",
+      "summary": "Participated in week-long Jimmy Carter Work Project building houses",
+      "highlights": [],
+      "endDate": "2005-05-01"
+    },
+    {
+      "organization": "Emergency Food Network",
+      "position": "Bagger",
+      "url": "http://www.emergencyfoodnetwork.org/",
+      "startDate": "2000-07-01",
+      "summary": "Bagged food parcels weekly for distribution to local individuals and families suffering from food insecurity",
+      "highlights": [
+        "Designed the EFN logo and website (since replaced)"
+      ],
+      "endDate": "2012-01-01"
+    },
+    {
+      "organization": "Innisfree Village",
+      "position": "Caretaker",
+      "url": "http://www.innisfreevillage.org/",
+      "startDate": "1999-10-01",
+      "summary": "Provided live-in life assistance to adults with disabilities. Started computer skills program for residents.",
+      "highlights": [],
+      "endDate": "2000-07-01"
+    },
+    {
+      "organization": "Book Buddies",
+      "position": "Tutor",
+      "url": "",
+      "startDate": "1998-09-01",
+      "summary": "Tutored elementary school students in reading",
+      "highlights": [],
+      "endDate": "1999-05-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "East Carolina University",
+      "url": "https://www.ecu.edu/",
+      "area": "Graphic Design and Illustration",
+      "studyType": "Bachelor of Fine Arts",
+      "startDate": "1994-08-01",
+      "endDate": "1998-07-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "Expert",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "Expert",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Web Components",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "CLI Development",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Web Video",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "SVG",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Web Graphics APIs & Animation",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Design Systems",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Testing: Mocha, Jest, Karma, TestCafe, Cypress",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "CI/CD",
+      "level": "Proficient",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Front-End Web Development",
+      "level": "Master",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Art",
+      "keywords": [
+        "creative"
+      ]
+    },
+    {
+      "name": "Graphic Design and Illustration",
+      "keywords": [
+        "creative"
+      ]
+    },
+    {
+      "name": "Animation",
+      "keywords": [
+        "creative"
+      ]
+    },
+    {
+      "name": "Sacred Geometry",
+      "keywords": [
+        "creative"
+      ]
+    },
+    {
+      "name": "Songwriting (Guitar, Singing)",
+      "keywords": [
+        "creative"
+      ]
+    },
+    {
+      "name": "Juggling",
+      "keywords": [
+        "activity"
+      ]
+    },
+    {
+      "name": "Meditation",
+      "keywords": [
+        "wellness",
+        "activity",
+        "life-hacking"
+      ]
+    },
+    {
+      "name": "Gardening",
+      "keywords": [
+        "activity"
+      ]
+    },
+    {
+      "name": "Hiking",
+      "keywords": [
+        "wellness",
+        "activity"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "WebDeveloper.FYI",
+      "description": "",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "2021-09-20",
+      "url": "https://webdeveloper.fyi",
+      "roles": [
+        "Developer"
+      ],
+      "type": "Application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-03-29T22:01:26.297Z"
+  }
+}

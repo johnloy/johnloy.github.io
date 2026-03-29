@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "johnloy.github.io",
+  "description": "Personal resume site built with JSON Resume",
+  "scripts": {
+    "build": "mkdir -p public && npx resumed render resume.json --theme jsonresume-theme-even --output public/index.html",
+    "preview": "npx resumed render resume.json --theme jsonresume-theme-even --output index.html && open index.html"
+  },
+  "devDependencies": {
+    "resumed": "^3.0.0",
+    "jsonresume-theme-even": "^0.22.0"
+  }
+}
