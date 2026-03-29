@@ -4,11 +4,12 @@
   "description": "Personal resume site built with JSON Resume",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "preview": "npx resumed render resume.json --theme jsonresume-theme-even --output index.html && open index.html"
+    "build:theme": "cd theme && npm run build",
+    "build:resume": "node scripts/build.mjs",
+    "build": "npm run build:theme && npm run build:resume",
+    "preview": "npm run build:theme && npx resumed render resume.json --theme ./theme/dist --output index.html && open index.html"
   },
   "dependencies": {
-    "jsonresume-theme-even": "^0.22.0",
     "puppeteer": "^24.0.0",
     "resumed": "^3.0.0"
   }

@@ -1,9 +1,11 @@
 import { render } from 'resumed';
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
-import { createRequire } from 'module';
+import { pathToFileURL } from 'url';
+import { resolve } from 'path';
 
-const require = createRequire(import.meta.url);
-const theme = require('jsonresume-theme-even');
+// Load the local theme from the built dist
+const themePath = resolve('theme/dist/index.js');
+const theme = await import(pathToFileURL(themePath).href);
 
 const resume = JSON.parse(readFileSync('resume.json', 'utf-8'));
 
