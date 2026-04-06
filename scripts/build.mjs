@@ -49,7 +49,7 @@ const page = await browser.newPage();
 // Render a clean version of the HTML (without the PDF link) for the PDF
 const cleanHtml = await render(resume, theme);
 await page.setContent(cleanHtml, { waitUntil: 'networkidle0' });
-await page.emulateMediaType('screen');
+await page.emulateMediaType('print');
 
 await page.pdf({
   path: 'public/resume.pdf',

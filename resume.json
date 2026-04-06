@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "John Loy",
-    "label": "Web Engineer",
+    "label": "Web Software Engineer",
     "image": "https://avatars.githubusercontent.com/u/118049?v=4",
     "email": "loy.john@gmail.com",
-    "url": "",
-    "summary": "I\u2019ve done most things \u201cweb\u201d, for over 20 years, beginning my career as a designer, evolving into a web engineer. At various points in my career, I\u2019ve called myself a webmaster, web UX designer, back-end engineer, and front-end engineer. These days, I might call myself a front-end-leaning full-stack engineer, but I prefer to just call myself flexible. Also, I\u2019m a developer who gets design!",
+    "url": "https://johnloy.github.io",
+    "summary": "During my time designing and building for the web over the past 25 years, I have worn the hats of Webmaster, UX designer, back-end engineer, front-end engineer, and technical lead. My past and current professional roles demanded I continually adapt my skills to meet each new challenge, whether that entailed designing, coding, architecting, leading development teams, or working with clients and stakeholders. Lately, I might call myself a front-leaning full-stack engineer, focused on a React + TypeScript + Node stack, but I prefer to just call myself versatile and experienced.",
     "location": {
       "city": "Charlottesville",
       "region": "VA",
@@ -30,8 +30,8 @@
       "name": "Dreamworks Animation, NBC Universal",
       "position": "Senior Software Engineer",
       "url": "https://dreamworks.com",
-      "startDate": "2022-03-01",
-      "summary": "Develop custom web applications to support the data management needs of animators and other specialists involved in film production at the Dreamworks Animation studio.",
+      "startDate": "2022-02-14",
+      "summary": "Developed custom web applications to support the data management needs of animators and other specialists involved in film production at the Dreamworks Animation film studio.",
       "highlights": [
         "Developed and maintained a web-based file transfer tool to facilitate safely exchanging film assets between Dreamworks and vendors ",
         "Developed and maintained a web-based tool for inspecting the readiness of 3D model assets, including a WebGL-based 3D model viewer",
@@ -44,12 +44,13 @@
       "position": "Staff Engineer",
       "url": "https://willowtreeapps.com",
       "startDate": "2018-11-01",
-      "summary": "Architected, developed, and advised in a senior client-facing capacity to produce web apps for multi-platform client projects",
+      "summary": "Architected, developed, and advised in a senior client-facing capacity to produce web applications for multi-platform client projects.",
       "highlights": [
-        "Developed features for an internal supply chain management app for Anheuser-Busch InBev using React, TypeScript, Docker, Node (API), SQL Server, and Azure ",
+        "Developed the first version of the https://sigmasquared.io/ HR tool for talent optimization, providing D3.js-based visualizations for data analysis",
+        "Developed features for an internal supply chain management application for Anheuser-Busch InBev using React, TypeScript, Docker, Node (API), SQL Server, and Azure ",
         "Migrated a Chrome/Firefox web extension to Safari for Capital One using Angular, TypeScript, and XCode",
         "Led an initiative to migrate the WillowTree website from a React SSR SPA to a static JAMStack site using a custom SSG build tool built on standard Web Components and Netlify",
-        "Mentored colleagues at WillowTree, particularly about the emergence of Web Components",
+        "Mentored colleagues at WillowTree, particularly about web standards and the web platform",
         "Used a variety of front-end frameworks and technologies, including React, Angular, Web Components, and TypeScript"
       ],
       "endDate": "2021-12-01"
@@ -59,10 +60,10 @@
       "position": "Senior Engineer",
       "url": "https://willowtreeapps.com/",
       "startDate": "2015-11-01",
-      "summary": "Architected, developed, and advised in a senior client-facing capacity to produce web apps for multi-platform client projects",
+      "summary": "Architected, developed, and advised in a senior client-facing capacity to produce web applications for multi-platform client projects.",
       "highlights": [
-        "Led development of a full rewrite of the HBO Nordic OTT streaming web app, a React+Redux+TypeScript SPA, from inception to release and maintenance",
-        "Developed features for the HBO Nordic and Fox Chromecast apps",
+        "Led development of a full rewrite of the HBO Nordic OTT streaming web application, a React+Redux+TypeScript SPA, from inception to release and maintenance",
+        "Developed features for the HBO Nordic and Fox Chromecast applications",
         "Provided on-site support for the HBO Nordic client",
         "Mentored colleagues, new hires, and interns at WillowTree"
       ],
@@ -73,9 +74,9 @@
       "position": "Front-End Developer",
       "url": "https://roomkey.com/",
       "startDate": "2013-07-01",
-      "summary": "Developed the UI of a hotel booking meta search website",
+      "summary": "Developed the UI of a hotel booking meta search website.",
       "highlights": [
-        "Developed the UI of the centerpiece autocomplete search, live search filtering, search results, and geo results visualization",
+        "Developed the centerpiece autocomplete search UI involving live search filtering, search results, and geo results visualization",
         "Worked with Backbone.js on the front-end",
         "Worked with Clojure on the back-end"
       ],
@@ -86,7 +87,7 @@
       "position": "Ruby on Rails Developer",
       "url": "https://www.scitent.com/",
       "startDate": "2011-03-01",
-      "summary": "Developed e-learning solutions for the health care industry",
+      "summary": "Developed custom LMS solutions, primarily for the health care industry.",
       "highlights": [
         "Executed a rewrite in Rails of the flagship Scitent web-based learning management system, tailored to clients like the American Heart Association",
         "Worked with Backbone.js and Knockout.js on the front-end",
@@ -99,10 +100,10 @@
       "position": "Web Developer",
       "url": "",
       "startDate": "2009-08-01",
-      "summary": "Developed the UI of bespoke web app solutions, in a small agency setting",
+      "summary": "Developed the UI of bespoke web application solutions in a small agency setting.",
       "highlights": [
         "Served clients from e-commerce, higher education, non-profit, and medical industries",
-        "Developed the Youth Leadership Initiative for the U.Va. Center for Politics, a mock election web app serving tens of thousands of educators and students worldwide",
+        "Developed the Youth Leadership Initiative for the U.Va. Center for Politics, a mock election web application serving tens of thousands of educators and students worldwide",
         "Worked with jQuery, and otherwise \u201cvanilla\u201d JavaScript, on the front-end",
         "Worked with PHP, Rails, Grails, and ColdFusion on the back-end"
       ],
@@ -113,7 +114,7 @@
       "position": "Web UX Designer",
       "url": "",
       "startDate": "2006-07-01",
-      "summary": "Stewarded the web presence of the U.Va. Library as part of the library communications team",
+      "summary": "Stewarded the web presence of the U.Va. Library as part of the library communications team.",
       "highlights": [
         "Guided the library through a redesign effort, involving information architecture, visual design, SEO, technical solutions, and stakeholder training",
         "Developed a UI framework, templating, and CMS solution to accommodate the needs of thousands of pages and dozens of website stakeholders",
@@ -164,10 +165,8 @@
       "position": "Bagger",
       "url": "http://www.emergencyfoodnetwork.org/",
       "startDate": "2000-07-01",
-      "summary": "Bagged food parcels weekly for distribution to local individuals and families suffering from food insecurity",
-      "highlights": [
-        "Designed the EFN logo and website (since replaced)"
-      ],
+      "summary": "Designed the EFN logo and website. Bagged food parcels weekly for distribution to local individuals and families suffering from food insecurity.",
+      "highlights": [],
       "endDate": "2012-01-01"
     },
     {
@@ -204,167 +203,247 @@
   "skills": [
     {
       "name": "JavaScript",
-      "level": "Expert",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "CSS",
-      "level": "Expert",
+      "name": "Typescript",
+      "level": "",
       "keywords": []
     },
     {
       "name": "React",
-      "level": "Advanced",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Astro",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vue",
+      "level": "",
       "keywords": []
     },
     {
       "name": "Web Components",
-      "level": "Advanced",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "Node.js",
-      "level": "Advanced",
+      "name": "Node",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "Docker",
-      "level": "Intermediate",
+      "name": "CSS",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "Bash",
-      "level": "Intermediate",
+      "name": "Tailwind",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "CLI Development",
-      "level": "Intermediate",
+      "name": "Jest",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "Web Video",
-      "level": "Intermediate",
+      "name": "Vitest",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "SVG",
-      "level": "Intermediate",
-      "keywords": []
-    },
-    {
-      "name": "Web Graphics APIs & Animation",
-      "level": "Intermediate",
-      "keywords": []
-    },
-    {
-      "name": "Design Systems",
-      "level": "Intermediate",
-      "keywords": []
-    },
-    {
-      "name": "Testing: Mocha, Jest, Karma, TestCafe, Cypress",
-      "level": "Intermediate",
-      "keywords": []
-    },
-    {
-      "name": "CI/CD",
-      "level": "Proficient",
+      "name": "Playwright",
+      "level": "",
       "keywords": []
     },
     {
       "name": "Git",
-      "level": "Advanced",
+      "level": "",
       "keywords": []
     },
     {
-      "name": "Front-End Web Development",
-      "level": "Master",
+      "name": "Github",
+      "level": "",
       "keywords": []
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native Speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Art",
-      "keywords": [
-        "creative"
-      ]
     },
     {
-      "name": "Graphic Design and Illustration",
-      "keywords": [
-        "creative"
-      ]
+      "name": "Github Copilot",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Animation",
-      "keywords": [
-        "creative"
-      ]
+      "name": "CI/CD",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Sacred Geometry",
-      "keywords": [
-        "creative"
-      ]
+      "name": "Docker",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Songwriting (Guitar, Singing)",
-      "keywords": [
-        "creative"
-      ]
+      "name": "Unix/Linux",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Juggling",
-      "keywords": [
-        "activity"
-      ]
+      "name": "Bash/Zsh",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Meditation",
-      "keywords": [
-        "wellness",
-        "activity",
-        "life-hacking"
-      ]
+      "name": "SVG",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Gardening",
-      "keywords": [
-        "activity"
-      ]
+      "name": "D3",
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Hiking",
-      "keywords": [
-        "wellness",
-        "activity"
-      ]
+      "name": "WebGL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Three.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Animation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Audio/Video",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Zsh",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Azure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Cloud Platform",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "REST",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GraphQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Figma",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Systems",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Storybook",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Accessibility / WCAG / ARIA",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Performance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Azure SQL Database",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Wordpress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ruby",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Rails",
+      "level": "",
+      "keywords": []
     }
   ],
   "projects": [
     {
-      "name": "WebDeveloper.FYI",
-      "description": "",
+      "name": "Edui Conference",
+      "description": "A conference for web professionals in higher education",
       "highlights": [],
       "keywords": [],
-      "startDate": "2021-09-20",
-      "url": "https://webdeveloper.fyi",
+      "startDate": "2009-09-21",
+      "endDate": "2018-10-08",
       "roles": [
-        "Developer"
+        "Co-founder"
       ],
-      "type": "Application"
+      "type": "Event"
     }
   ],
   "meta": {
