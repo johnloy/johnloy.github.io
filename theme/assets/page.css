@@ -298,9 +298,9 @@ blockquote > * + *,
     grid-template-columns: repeat(auto-fit, minmax(calc((100% - 1em) / 2), 1fr));
   }
 
-  :is(#education, #volunteer, #work .stack:nth-last-child(2)) > h3 {
+  /* :is(#education, #volunteer, #work .stack >*:nth-last-child(2) > h3) {
     break-before: page;
-  }
+  } */
 }
 
 time + time-duration::before {
