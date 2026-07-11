@@ -1,3 +1,5 @@
 node_modules/
 public/
 theme/dist/
+CLAUDE.local.md
+/index.html

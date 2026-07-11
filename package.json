@@ -7,10 +7,13 @@
     "build:theme": "cd theme && npm run build",
     "build:resume": "node scripts/build.mjs",
     "build": "npm run build:theme && npm run build:resume",
-    "preview": "npm run build:theme && npx resumed render resume.json --theme ./theme/dist --output index.html && open index.html"
+    "preview": "npm run build:theme && node scripts/preview.mjs",
+    "start": "vite"
   },
   "dependencies": {
+    "prettier": "^3.9.5",
     "puppeteer": "^24.0.0",
-    "resumed": "^3.0.0"
+    "resumed": "^3.0.0",
+    "vite": "^7.1.0"
   }
 }

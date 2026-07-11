@@ -1,0 +1,46 @@
+- JavaScript
+- Typescript
+- React
+- Next.js
+- Astro
+- Vue
+- Web Components
+- Node
+- CSS
+- Tailwind
+- Jest
+- Vitest
+- Playwright
+- Git
+- Github
+- Github Copilot
+- CI/CD
+- Docker
+- Unix/Linux
+- Bash/Zsh
+- SVG
+- D3
+- WebGL
+- Three.js
+- Web Animation
+- Web Audio/Video
+- Bash
+- Zsh
+- Microsoft Azure
+- Google Cloud Platform
+- Amazon Web Services
+- REST
+- GraphQL
+- Figma
+- Design Systems
+- Storybook
+- Web Accessibility / WCAG / ARIA
+- Web Performance
+- MongoDB
+- SQL
+- Azure SQL Database
+- MySQL
+- PHP
+- Wordpress
+- Ruby
+- Rails

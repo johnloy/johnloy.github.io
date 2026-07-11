@@ -1,13 +1,15 @@
 import { render } from 'resumed';
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync } from 'fs';
 import { pathToFileURL } from 'url';
 import { resolve } from 'path';
+import prettier from 'prettier';
+import { loadResume } from './load-resume.mjs';
 
 // Load the local theme from the built dist
 const themePath = resolve('theme/dist/index.js');
 const theme = await import(pathToFileURL(themePath).href);
 
-const resume = JSON.parse(readFileSync('resume.json', 'utf-8'));
+const resume = loadResume();
 
 // Render HTML
 let html = await render(resume, theme);
@@ -34,9 +36,14 @@ const pdfLink = `
 // Insert the PDF link right before the closing </header> tag (end of masthead)
 html = html.replace('</header>', pdfLink + '\n    </header>');
 
+html = await prettier.format(html, { ...(await prettier.resolveConfig('index.html')), parser: 'html' });
+
 mkdirSync('public', { recursive: true });
 writeFileSync('public/index.html', html);
 console.log('✓ Built public/index.html');
+
+writeFileSync('public/resume.json', JSON.stringify(resume, null, 2) + '\n');
+console.log('✓ Built public/resume.json');
 
 // Generate PDF using Puppeteer
 const puppeteer = (await import('puppeteer')).default;
