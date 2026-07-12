@@ -1,4 +1,3 @@
-- Test New Skill
 - JavaScript
 - Typescript
 - React
