@@ -32,7 +32,8 @@
         "Developed and maintained a web-based file transfer tool to facilitate safely exchanging film assets between Dreamworks and vendors ",
         "Developed and maintained a web-based tool for inspecting the readiness of 3D model assets, including a WebGL-based 3D model viewer",
         "Developed and maintained a web-based digital \"backlot\" tool for retrieving and reusing digital assets used in past Dreamworks films ",
-        "Assisted with development and management of a visual design system of UI components for use in Dreamworks web-based applications "
+        "Assisted with development and management of a visual design system of UI components for use in Dreamworks web-based applications ",
+        "Built documentation sites with Jekyll, Astro, and Storybook for internal tools, including Dreamworks' OpenMoonray project https://docs.openmoonray.org/"
       ]
     },
     {
@@ -108,7 +109,7 @@
     {
       "name": "University of Virginia Library",
       "position": "Web UX Designer",
-      "url": "",
+      "url": "https://library.virginia.edu",
       "startDate": "2006-07-01",
       "summary": "Stewarded the web presence of the U.Va. Library as part of the library communications team.",
       "highlights": [
@@ -122,7 +123,7 @@
     {
       "name": "University of Virginia, College and Graduate School of Arts & Sciences",
       "position": "Webmaster",
-      "url": "",
+      "url": "https://as.virginia.edu/",
       "startDate": "2000-07-01",
       "summary": "Stewarded the web presence of the U.Va. College and Graduate School of Arts & Sciences as part of the A&S communications team",
       "highlights": [
@@ -135,7 +136,7 @@
     {
       "name": "Gibson Design Associates",
       "position": "Graphic Designer",
-      "url": "",
+      "url": "https://www.gibsondesign.com/",
       "startDate": "1998-07-01",
       "summary": "",
       "highlights": [

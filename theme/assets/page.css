@@ -71,7 +71,7 @@ body {
 }
 
 body::before {
-  content: '';
+  content: "";
   grid-column: full;
   grid-row: content;
 }
@@ -152,7 +152,7 @@ cite {
 }
 
 cite::before {
-  content: '— ';
+  content: "— ";
 }
 
 svg {
@@ -206,6 +206,40 @@ blockquote > * + *,
   padding: 0;
 }
 
+.resume-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.resume-link {
+  align-items: center;
+  border: 1px solid var(--color-accent);
+  border-radius: 0.3em;
+  display: inline-flex;
+  font-size: var(--scale0);
+  gap: 0.4em;
+  padding: 0.5em 1.2em;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.resume-link:hover,
+.resume-link:focus {
+  background: var(--color-accent);
+  color: var(--color-background);
+  text-decoration: none;
+}
+
+@media print {
+  .resume-links {
+    display: none;
+  }
+}
+
 .grid-list {
   display: grid;
   gap: 1em;
@@ -219,6 +253,22 @@ blockquote > * + *,
 
 #skills .grid-list > div {
   white-space: nowrap;
+}
+
+#skills h4 {
+  font-size: 22px;
+}
+
+@media (min-width: 48rem) {
+  .resume-links {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  #skills h4 {
+    font-size: 25px;
+  }
 }
 
 .tag-list {
@@ -244,7 +294,7 @@ blockquote > * + *,
 }
 
 .timeline > div:not(:last-child)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 1rem;
   left: -15px;
@@ -254,7 +304,7 @@ blockquote > * + *,
 }
 
 .timeline > div:not(:only-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0.6rem;
   left: -20px;
@@ -295,7 +345,10 @@ blockquote > * + *,
   }
 
   .grid-list {
-    grid-template-columns: repeat(auto-fit, minmax(calc((100% - 1em) / 2), 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc((100% - 1em) / 2), 1fr)
+    );
   }
 
   /* :is(#education, #volunteer, #work .stack >*:nth-last-child(2) > h3) {
@@ -304,10 +357,56 @@ blockquote > * + *,
 }
 
 time + time-duration::before {
-  content: '· ';
+  content: "· ";
 }
 
 @media print {
+  body {
+    margin: 0 0.25in 0.25in !important;
+    font-size: 14px;
+    color-scheme: light;
+    gap: 1.5em;
+    grid-template-columns:
+      [full-start]
+      1fr
+      [main-start side-start]
+      minmax(min-content, 10em)
+      [side-end content-start]
+      minmax(min-content, 36em)
+      [main-end content-end]
+      1fr
+      [full-end];
+  }
+
+  .masthead {
+    padding: 0.5in 0;
+    margin-bottom: -0.05in;
+  }
+
+  @page {
+    size: letter;
+    margin-top: 0.25in;
+    margin-bottom: 0.25in;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  #work article {
+    break-inside: avoid;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: var(--color-background-light);
+      --color-dimmed: var(--color-dimmed-light);
+      --color-primary: var(--color-primary-light);
+      --color-secondary: var(--color-secondary-light);
+      --color-accent: var(--color-accent-light);
+    }
+  }
+
   time-duration {
     display: none;
   }

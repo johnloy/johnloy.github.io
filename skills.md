@@ -14,6 +14,8 @@
 - Git
 - Github
 - Github Copilot
+- Claude
+- Gemini
 - CI/CD
 - Docker
 - Unix/Linux
