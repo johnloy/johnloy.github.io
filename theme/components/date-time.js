@@ -13,8 +13,10 @@ const formatDate = dateString =>
 
 /**
  * @param {string} date
+ * @param {string} [itemprop]
  * @returns {string}
  */
-export default function DateTime(date) {
-  return html`<time datetime="${date}">${formatDate(date)}</time>`
+export default function DateTime(date, itemprop) {
+  const attr = itemprop ? ` itemprop="${itemprop}"` : ''
+  return html`<time datetime="${date}"${attr}>${formatDate(date)}</time>`
 }

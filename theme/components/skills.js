@@ -12,13 +12,13 @@ export default function Skills(skills = []) {
         <h3>Skills</h3>
         <div class="grid-list">
           ${skills.map(
-            ({ keywords = [], name }) => html`
-              <div>
-                ${name && html`<h4>${name}</h4>`}
+            ({ keywords = [], name, itemtype }) => html`
+              <div itemprop="knowsAbout" itemscope itemtype="https://schema.org/${itemtype || 'DefinedTerm'}">
+                ${name && html`<h4 itemprop="description">${name}</h4>`}
                 ${keywords.length > 0 &&
                 html`
                   <ul class="tag-list">
-                    ${keywords.map(keyword => html`<li>${keyword}</li>`)}
+                    ${keywords.map(keyword => html`<li itemprop="name">${keyword}</li>`)}
                   </ul>
                 `}
               </div>

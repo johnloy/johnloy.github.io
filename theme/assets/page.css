@@ -184,7 +184,8 @@ section {
 
 article > * + *,
 blockquote > * + *,
-.timeline > div > * + * {
+.timeline > div > * + *,
+[itemprop='employee'] > * + * {
   margin-top: 0.6em;
 }
 

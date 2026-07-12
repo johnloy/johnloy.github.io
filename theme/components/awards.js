@@ -17,7 +17,7 @@ export default function Awards(awards = []) {
             ({ awarder, date, summary, title }) => html`
               <article>
                 <header>
-                  <h4>${title}</h4>
+                  <h4 itemprop="award">${title}</h4>
                   <div class="meta">
                     ${awarder && html`<div>Awarded by <strong>${awarder}</strong></div>`} ${date && DateTime(date)}
                   </div>

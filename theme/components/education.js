@@ -16,9 +16,9 @@ export default function Education(education = []) {
         <div class="stack">
           ${education.map(
             ({ area, courses = [], institution, startDate, endDate, studyType, url }) => html`
-              <article>
+              <article itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
                 <header>
-                  <h4>${Link(url, institution)}</h4>
+                  <h4>${Link(url, institution, 'name')}</h4>
                   <div class="meta">
                     <div>${[studyType, area && html`<strong>${area}</strong>`].filter(Boolean).join(' in ')}</div>
                     ${startDate && html`<div>${DateTimeDuration(startDate, endDate)}</div>`}

@@ -33,9 +33,9 @@ export default function Projects(projects = []) {
               type,
               url,
             }) => html`
-              <article>
+              <article itemscope itemtype="https://schema.org/CreativeWork">
                 <header>
-                  <h4>${Link(url, name)}</h4>
+                  <h4>${Link(url, name, 'name')}</h4>
                   <div class="meta">
                     <div>
                       ${roles.length > 0 && html`<strong>${formatRoles(roles)}</strong>`}
@@ -45,7 +45,7 @@ export default function Projects(projects = []) {
                     ${type && html`<div>${type}</div>`}
                   </div>
                 </header>
-                ${description && markdown(description)}
+                ${description && html`<div itemprop="description">${markdown(description)}</div>`}
                 ${highlights.length > 0 &&
                 html`
                   <ul>

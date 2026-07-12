@@ -14,12 +14,14 @@ export default function References(references = []) {
         <div class="stack">
           ${references.map(
             ({ name, reference }) => html`
-              <blockquote>
-                ${reference && markdown(reference)}
+              <blockquote itemscope itemtype="https://schema.org/Review">
+                ${reference && html`<div itemprop="reviewBody">${markdown(reference)}</div>`}
                 ${name &&
                 html`
                   <p>
-                    <cite>${name}</cite>
+                    <cite itemprop="author" itemscope itemtype="https://schema.org/Person"
+                      ><span itemprop="name">${name}</span></cite
+                    >
                   </p>
                 `}
               </blockquote>

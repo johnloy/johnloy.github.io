@@ -16,21 +16,26 @@ export default function Volunteer(volunteer = []) {
         <div class="stack">
           ${volunteer.map(
             ({ highlights = [], organization, position, startDate, endDate, summary, url }) => html`
-              <article>
+              <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
                 <header>
-                  <h4>${Link(url, organization)}</h4>
-                  <div class="meta">
-                    <strong>${position}</strong>
-                    ${startDate && html`<div>${DateTimeDuration(startDate, endDate)}</div>`}
-                  </div>
+                  <h4>${Link(url, organization, 'name')}</h4>
                 </header>
-                ${summary && markdown(summary)}
-                ${highlights.length > 0 &&
-                html`
-                  <ul>
-                    ${highlights.map(highlight => html`<li>${markdown(highlight)}</li>`)}
-                  </ul>
-                `}
+                <section itemprop="employee" itemscope itemtype="https://schema.org/EmployeeRole">
+                  <div class="meta">
+                    <strong itemprop="roleName">${position}</strong>
+                    ${startDate &&
+                    html`<div>
+                      ${DateTimeDuration(startDate, endDate, { startItemprop: 'startDate', endItemprop: 'endDate' })}
+                    </div>`}
+                  </div>
+                  ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
+                  ${highlights.length > 0 &&
+                  html`
+                    <ul>
+                      ${highlights.map(highlight => html`<li>${markdown(highlight)}</li>`)}
+                    </ul>
+                  `}
+                </section>
               </article>
             `,
           )}

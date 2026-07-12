@@ -5,9 +5,10 @@ import Duration from './duration.js'
 /**
  * @param {string} startDate
  * @param {string} [endDate]
+ * @param {{ startItemprop?: string, endItemprop?: string }} [itemprops]
  * @returns {string}
  */
-export default function DateTimeDuration(startDate, endDate) {
-  if (endDate === startDate) return DateTime(endDate)
-  return html`${DateTime(startDate)} – ${endDate ? DateTime(endDate) : 'Present'} ${Duration([{ startDate, endDate }])}`
+export default function DateTimeDuration(startDate, endDate, { startItemprop, endItemprop } = {}) {
+  if (endDate === startDate) return DateTime(endDate, startItemprop)
+  return html`${DateTime(startDate, startItemprop)} – ${endDate ? DateTime(endDate, endItemprop) : 'Present'} ${Duration([{ startDate, endDate }])}`
 }

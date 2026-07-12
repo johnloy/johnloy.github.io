@@ -29,21 +29,26 @@ export default function Work(work = []) {
           ${nestedWork.map(({ description, name, url, items = [] }) => {
             const singleItem = items.length === 1 ? items[0] : undefined
             return html`
-              <article>
+              <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
                 <header>
-                  <h4>${singleItem ? singleItem.position : Link(url, name)}</h4>
+                  <h4>${singleItem ? singleItem.position : Link(url, name, 'name')}</h4>
                   <div class="meta">
                     ${singleItem
                       ? html`
                           <div>
-                            ${[html`<strong>${Link(url, name)}</strong>`, description].filter(Boolean).join(' · ')}
+                            ${[
+                              html`<strong>${Link(url, name, 'name')}</strong>`,
+                              description && html`<span itemprop="description">${description}</span>`,
+                            ]
+                              .filter(Boolean)
+                              .join(' · ')}
                           </div>
                           ${singleItem.startDate &&
                           html`<div>${DateTimeDuration(singleItem.startDate, singleItem.endDate)}</div>`}
                           ${singleItem.location && html`<div>${singleItem.location}</div>`}
                         `
                       : html`
-                          ${description && html`<div>${description}</div>`}
+                          ${description && html`<div itemprop="description">${description}</div>`}
                           ${items.some(item => item.startDate) && html`<div>${Duration(items)}</div>`}
                         `}
                   </div>
@@ -51,18 +56,28 @@ export default function Work(work = []) {
                 <div class="timeline">
                   ${items.map(
                     ({ highlights = [], location, position, startDate, endDate, summary }) => html`
-                      <div>
+                      <div itemprop="employee" itemscope itemtype="https://schema.org/EmployeeRole">
+                        ${singleItem &&
+                        html`<meta itemprop="roleName" content="${position}" />
+                          ${startDate && html`<meta itemprop="startDate" content="${startDate}" />`}
+                          ${endDate && html`<meta itemprop="endDate" content="${endDate}" />`}`}
                         ${!singleItem &&
                         html`
                           <div>
-                            <h5>${position}</h5>
+                            <h5 itemprop="roleName">${position}</h5>
                             <div class="meta">
-                              ${startDate && html`<div>${DateTimeDuration(startDate, endDate)}</div>`}
+                              ${startDate &&
+                              html`<div>
+                                ${DateTimeDuration(startDate, endDate, {
+                                  startItemprop: 'startDate',
+                                  endItemprop: 'endDate',
+                                })}
+                              </div>`}
                               ${location && html`<div>${location}</div>`}
                             </div>
                           </div>
                         `}
-                        ${summary && markdown(summary)}
+                        ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
                         ${highlights.length > 0 &&
                         html`
                           <ul>

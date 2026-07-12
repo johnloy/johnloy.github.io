@@ -15,11 +15,18 @@ export default function Certificates(certificates = []) {
         <div class="stack">
           ${certificates.map(
             ({ date, issuer, name, url }) => html`
-              <article>
+              <article itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
                 <header>
-                  <h4>${Link(url, name)}</h4>
+                  <h4>${Link(url, name, 'name')}</h4>
                   <div class="meta">
-                    ${issuer && html`<div>Issued by <strong>${issuer}</strong></div>`} ${date && DateTime(date)}
+                    ${issuer &&
+                    html`<div>
+                      Issued by
+                      <strong itemprop="recognizedBy" itemscope itemtype="https://schema.org/Organization"
+                        ><span itemprop="name">${issuer}</span></strong
+                      >
+                    </div>`}
+                    ${date && DateTime(date)}
                   </div>
                 </header>
               </article>

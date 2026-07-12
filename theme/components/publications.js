@@ -16,15 +16,21 @@ export default function Publications(publications = []) {
         <div class="stack">
           ${publications.map(
             ({ name, publisher, releaseDate, summary, url }) => html`
-              <article>
+              <article itemscope itemtype="https://schema.org/CreativeWork">
                 <header>
-                  <h4>${Link(url, name)}</h4>
+                  <h4>${Link(url, name, 'name')}</h4>
                   <div class="meta">
-                    ${publisher && html`<div>Published by <strong>${publisher}</strong></div>`}
-                    ${releaseDate && DateTime(releaseDate)}
+                    ${publisher &&
+                    html`<div>
+                      Published by
+                      <strong itemprop="publisher" itemscope itemtype="https://schema.org/Organization"
+                        ><span itemprop="name">${publisher}</span></strong
+                      >
+                    </div>`}
+                    ${releaseDate && DateTime(releaseDate, 'datePublished')}
                   </div>
                 </header>
-                ${summary && markdown(summary)}
+                ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
               </article>
             `,
           )}

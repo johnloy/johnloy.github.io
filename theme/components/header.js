@@ -21,35 +21,43 @@ export default function Header(basics = {}) {
 
   return html`
     <header class="masthead">
-      ${image && html`<img src="${image}" alt="" />`}
-      <div>${name && html`<h1>${name}</h1>`} ${label && html`<h2>${label}</h2>`}</div>
-      ${summary && html`<article>${markdown(summary)}</article>`}
+      ${image && html`<img src="${image}" alt="" itemprop="image" />`}
+      <div>
+        ${name && html`<h1 itemprop="name">${name}</h1>`} ${label && html`<h2 itemprop="jobTitle">${label}</h2>`}
+      </div>
+      ${summary && html`<article itemprop="description">${markdown(summary)}</article>`}
       <ul class="icon-list">
         ${location?.city &&
         html`
-          <li>
-            ${Icon('map-pin')} ${location.city}${location.countryCode && html`, ${formatCountry(location.countryCode)}`}
+          <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            ${Icon('map-pin')}
+            <span itemprop="addressLocality">${location.city}</span>${location.countryCode &&
+            html`,
+              <span itemprop="addressCountry">${formatCountry(location.countryCode)}</span>`}
           </li>
         `}
         ${email &&
         html`
           <li>
             ${Icon('mail')}
-            <a href="mailto:${email}">${email}</a>
+            <a href="mailto:${email}" itemprop="email">${email}</a>
           </li>
         `}
         ${phone &&
         html`
           <li>
             ${Icon('phone')}
-            <a href="tel:${phone.replace(/\s/g, '')}">${phone}</a>
+            <a href="tel:${phone.replace(/\s/g, '')}" itemprop="telephone">${phone}</a>
           </li>
         `}
-        ${url && html`<li>${Icon('link')} ${Link(url)}</li>`}
+        ${url && html`<li>${Icon('link')} ${Link(url, undefined, 'url')}</li>`}
         ${profiles.map(
           ({ network, url, username }) => html`
-            <li>
-              ${network && Icon(network, 'user')} ${Link(url, username)}
+            <li itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+              ${network && html`${Icon(network, 'user')}<meta itemprop="contactType" content="${network}" />`}
+              ${url
+                ? html`<a href="${url}" itemprop="url"><span itemprop="identifier">${username}</span></a>`
+                : html`<span itemprop="identifier">${username}</span>`}
               ${network && html`<span class="network">(${network})</span>`}
             </li>
           `,

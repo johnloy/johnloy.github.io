@@ -38,7 +38,7 @@ export default function Resume(resume, { css, js } = {}) {
           ${js}
         </script>`}
       </head>
-      <body>
+      <body itemscope itemtype="https://schema.org/Person">
         ${Header(resume.basics)} ${Work(resume.work)}
         ${Education(resume.education)} ${Skills(resume.skills)}
         ${Projects(resume.projects)} ${Volunteer(resume.volunteer)}
